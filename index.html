@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Concepts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E9B7A9;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        .topic {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+            margin-bottom: 20px;
+        }
+        .topic img {
+            max-width: 100px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .learn-more-content {
+            display: none;
+            padding: 10px 0;
+            border-top: 1px solid #eee;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .learn-more-btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .learn-more-btn:hover {
+            background-color: #2980b9;
+        }
+        .video-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 16px;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            background-color: #ddd;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Topic 1: Compare the life cycle of some common animals -->
+    <div class="topic">
+        <h3>1-2. Compare the Life Cycle of Some Common Animals (Helpful and Harmful)</h3>
+        <p>Animals have different life cycles based on their species. Some animals, like houseflies and mosquitoes, undergo metamorphosis, while others, like mammals, follow a simpler growth process. Let’s look at the life cycle of two animals: the helpful bee and the harmful housefly.</p>
+        <button class="learn-more-btn" onclick="toggleLearnMore('life-cycle')">Learn More</button>
+        <div id="learn-more-life-cycle" class="learn-more-content">
+            <h4>Example 1: Life Cycle of a Housefly</h4>
+            <p>The housefly goes through a complete metamorphosis. The stages include:</p>
+            <ul>
+                <li><b>Egg</b> - The female housefly lays eggs in decaying organic matter.</li>
+                <li><b>Larva (Maggot)</b> - The egg hatches into larvae, which feed on decaying matter.</li>
+                <li><b>Pupa</b> - The larvae pupate, undergoing a transformation into an adult fly.</li>
+                <li><b>Adult</b> - The adult housefly emerges and starts the cycle again.</li>
+            </ul>
+            <img src="https://example.com/housefly-life-cycle.jpg" alt="Housefly Life Cycle" />
+            <p>Houseflies are known to be harmful as they carry diseases by feeding on filth and spreading bacteria.</p>
+
+            <h4>Example 2: Life Cycle of a Bee</h4>
+            <p>The bee also goes through complete metamorphosis, which includes these stages:</p>
+            <ul>
+                <li><b>Egg</b> - Female bees lay eggs in honeycomb cells.</li>
+                <li><b>Larva</b> - The eggs hatch into larvae, which are fed by worker bees.</li>
+                <li><b>Pupa</b> - The larva forms a pupa, where it undergoes a metamorphosis.</li>
+                <li><b>Adult</b> - The adult bee emerges, performing roles such as foraging and pollinating.</li>
+            </ul>
+            <img src="https://example.com/bee-life-cycle.jpg" alt="Bee Life Cycle" />
+            <p>Bees are extremely helpful for pollination, which is vital for the growth of many plants and crops.</p>
+        </div>
+    </div>
+
+    <!-- Topic 3: Compare the Modes of Reproduction of Some Common Animals -->
+    <div class="topic">
+        <h3>3. Compare the Modes of Reproduction of Some Common Animals</h3>
+        <p>Different animals have various methods of reproduction. Some animals reproduce sexually, while others can reproduce asexually. Let’s explore examples from the locality.</p>
+        <button class="learn-more-btn" onclick="toggleLearnMore('reproduction')">Learn More</button>
+        <div id="learn-more-reproduction" class="learn-more-content">
+            <h4>Example 1: Sexual Reproduction in Mammals</h4>
+            <p>Mammals, like humans, reproduce sexually. This involves the fusion of male and female gametes (sperm and egg) to form a fertilized egg, which develops into a new individual.</p>
+            <ul>
+                <li><b>Male</b> - Produces sperm.</li>
+                <li><b>Female</b> - Produces eggs and nurtures the offspring.</li>
+            </ul>
+            <img src="https://example.com/mammal-reproduction.jpg" alt="Mammal Reproduction" />
+            <p>This sexual reproduction ensures genetic variation in the offspring, making them more adaptable to their environment.</p>
+
+            <h4>Example 2: Asexual Reproduction in Aphids</h4>
+            <p>Aphids are a good example of asexual reproduction, specifically parthenogenesis. Female aphids can give birth to offspring without mating, producing clones of themselves.</p>
+            <img src="https://example.com/aphid-reproduction.jpg" alt="Aphid Reproduction" />
+            <p>This allows aphids to rapidly increase their population, especially in favorable conditions.</p>
+        </div>
+    </div>
+
+    <!-- Topic 4: Compare the Characteristics of Vertebrate and Invertebrate Animals -->
+    <div class="topic">
+        <h3>4. Compare the Characteristics of Vertebrate and Invertebrate Animals</h3>
+        <p>Vertebrates are animals with backbones, while invertebrates lack a backbone. This distinction plays a major role in the anatomy and physiology of the animals.</p>
+        <button class="learn-more-btn" onclick="toggleLearnMore('vertebrate-invertebrate')">Learn More</button>
+        <div id="learn-more-vertebrate-invertebrate" class="learn-more-content">
+            <h4>Example 1: Vertebrates</h4>
+            <p>Vertebrates, like humans, birds, and fish, have a backbone that supports the body and protects the spinal cord. They have more complex structures and systems.</p>
+            <img src="https://example.com/vertebrate.jpg" alt="Vertebrate Animal" />
+            <p>Some examples include:</p>
+            <ul>
+                <li>Humans: Mammals with advanced brain development.</li>
+                <li>Birds: Warm-blooded animals with feathers, wings, and beaks.</li>
+            </ul>
+
+            <h4>Example 2: Invertebrates</h4>
+            <p>Invertebrates, like insects and mollusks, lack a backbone but have other structures like exoskeletons for support.</p>
+            <img src="https://example.com/invertebrate.jpg" alt="Invertebrate Animal" />
+            <p>Examples include:</p>
+            <ul>
+                <li>Insects: Small invertebrates like ants and butterflies.</li>
+                <li>Mollusks: Soft-bodied animals like snails and squids.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Topic 5: Identify Specific Structures of Plants for Adaptation to Different Habitats -->
+    <div class="topic">
+        <h3>5. Identify Specific Structures of Plants for Adaptation to Different Habitats</h3>
+        <p>Plants have specialized structures that help them adapt to their environment. These adaptations allow them to survive and reproduce in different habitats, whether it's the desert, forest, or aquatic areas.</p>
+        <button class="learn-more-btn" onclickHere is the updated HTML code with all your requested fixes:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Concepts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E9B7A9;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        .topic {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+            margin-bottom: 20px;
+        }
+        .topic img {
+            max-width: 100px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .learn-more-content {
+            display: none;
+            padding: 10px 0;
+            border-top: 1px solid #eee;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .learn-more-btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .learn-more-btn:hover {
+            background-color: #2980b9;
+        }
+        .video-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 16px;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            background-color: #ddd;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Topic 1: Compare the life cycle of some common animals -->
+    <div class="topic">
+        <h3>1-2. Compare the Life Cycle of Some Common Animals (Helpful and Harmful)</h3>
+        <p>Animals have different life cycles based on their species. Some animals, like houseflies and mosquitoes, undergo metamorphosis, while others, like mammals, follow a simpler growth process. Let’s look at the life cycle of two animals: the helpful bee and the harmful housefly.</p>
+        <button class="learn-more-btn" onclick="toggleLearnMore('life-cycle')">Learn More</button>
+        <div id="learn-more-life-cycle" class="learn-more-content">
+            <h4>Example 1: Life Cycle of a Housefly</h4>
+            <p>The housefly goes through a complete metamorphosis. The stages include:</p>
+            <ul>
+                <li><b>Egg</b> - The female housefly lays eggs in decaying organic matter.</li>
+                <li><b>Larva (Maggot)</b> - The egg hatches into larvae, which feed on decaying matter.</li>
+                <li><b>Pupa</b> - The larvae pupate, undergoing a transformation into an adult fly.</li>
+                <li><b>Adult</b> - The adult housefly emerges and starts the cycle again.</li>
+            </ul>
+            <img src="https://example.com/housefly-life-cycle.jpg" alt="Housefly Life Cycle" />
+            <p>Houseflies are known to be harmful as they carry diseases by feeding on filth and spreading bacteria.</p>
+
+            <h4>Example 2: Life Cycle of a Bee</h4>
+            <p>The bee also goes through complete metamorphosis, which includes these stages:</p>
+            <ul>
+                <li><b>Egg</b> - Female bees lay eggs in honeycomb cells.</li>
+                <li><b>Larva</b> - The eggs hatch into larvae, which are fed by worker bees.</li>
+                <li><b>Pupa</b> - The larva forms a pupa, where it undergoes a metamorphosis.</li>
+                <li><b>Adult</b> - The adult bee emerges, performing roles such as foraging and pollinating.</li>
+            </ul>
+            <img src="https://example.com/bee-life-cycle.jpg" alt="Bee Life Cycle" />
+            <p>Bees are extremely helpful for pollination, which is vital for the growth of many plants and crops.</p>
+        </div>
+    </div>
+
+    <!-- Topic 3: Compare the Modes of Reproduction of Some Common Animals -->
+    <div class="topic">
+        <h3>3. Compare the Modes of Reproduction of Some Common Animals</h3>
+        <p>Different animals have various methods of reproduction. Some animals reproduce sexually, while others can reproduce asexually. Let’s explore examples from the locality.</p>
+        <button class="learn-more-btn" onclick="toggleLearnMore('reproduction')">Learn More</button>
+        <div id="learn-more-reproduction" class="learn-more-content">
+            <h4>Example 1: Sexual Reproduction in Mammals</h4>
+            <p>Mammals, like humans, reproduce sexually. This involves the fusion of male and female gametes (sperm and egg) to form a fertilized egg, which develops into a new individual.</p>
+            <ul>
+                <li><b>Male</b> - Produces sperm.</li>
+                <li><b>Female</b> - Produces eggs and nurtures the offspring.</li>
+            </ul>
+            <img src="https://example.com/mammal-reproduction.jpg" alt="Mammal Reproduction" />
+            <p>This sexual reproduction ensures genetic variation in the offspring, making them more adaptable to their environment.</p>
+
+            <h4>Example 2: Asexual Reproduction in Aphids</h4>
+            <p>Aphids are a good example of asexual reproduction, specifically parthenogenesis. Female aphids can give birth to offspring without mating, producing clones of themselves.</p>
+            <img src="https://example.com/aphid-reproduction.jpg" alt="Aphid Reproduction" />
+            <p>This allows aphids to rapidly increase their population, especially in favorable conditions.</p>
+        </div>
+    </div>
+
+    <!-- Topic 4: Compare the Characteristics of Vertebrate and Invertebrate Animals -->
+    <div class="topic">
+        <h3>4. Compare the Characteristics of Vertebrate and Invertebrate Animals</h3>
+        <p>Vertebrates are animals with backbones, while invertebrates lack a backbone. This distinction plays a major role in the anatomy and physiology of the animals.</p>
+        <button class="learn-more-btn" onclick="toggleLearnMore('vertebrate-invertebrate')">Learn More</button>
+        <div id="learn-more-vertebrate-invertebrate" class="learn-more-content">
+            <h4>Example 1: Vertebrates</h4>
+            <p>Vertebrates, like humans, birds, and fish, have a backbone that supports the body and protects the spinal cord. They have more complex structures and systems.</p>
+            <img src="https://example.com/vertebrate.jpg" alt="Vertebrate Animal" />
+            <p>Some examples include:</p>
+            <ul>
+                <li>Humans: Mammals with advanced brain development.</li>
+                <li>Birds: Warm-blooded animals with feathers, wings, and beaks.</li>
+            </ul>
+
+            <h4>Example 2: Invertebrates</h4>
+            <p>Invertebrates, like insects and mollusks, lack a backbone but have other structures like exoskeletons for support.</p>
+            <img src="https://example.com/invertebrate.jpg" alt="Invertebrate Animal" />
+            <p>Examples include:</p>
+            <ul>
+                <li>Insects: Small invertebrates like ants and butterflies.</li>
+                <li>Mollusks: Soft-bodied animals like snails and squids.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Topic 5: Identify Specific Structures of Plants for Adaptation to Different Habitats -->
+    <div class="topic">
+        <h3>5. Identify Specific Structures of Plants for Adaptation to Different Habitats</h3>
+        <p>Plants have specialized structures that help them adapt to their environment. These adaptations allow them to survive and reproduce in different habitats, whether it's the desert, forest, or aquatic areas.</p>
+        <button class="learn-more-btn" onclick="toggleLearnMore('plant-adaptation')">Learn More</button>
+        <div id="learn-more-plant-adaptation" class="learn-more-content">
+    <!-- Topic 6: Reproduction Through Seeds (Sexual) and Plant Parts (Asexual) -->
+    <div class="topic">
+        <h3>6. Reproduction Through Seeds (Sexual) and Plant Parts (Asexual)</h3>
+        <p>
+            Plants can reproduce in two main ways: sexual reproduction through seeds and asexual reproduction through parts like stems, leaves, and roots.
+        </p>
+        <button class="learn-more-btn" onclick="toggleLearnMore('seed-reproduction')">Learn More</button>
+        <div id="learn-more-seed-reproduction" class="learn-more-content">
+            <h4>Sexual Reproduction in Plants</h4>
+            <p>In sexual reproduction, plants produce seeds that grow into new plants. This process involves pollination, where pollen from the male flower fertilizes the female ovule, resulting in seed formation. Once fertilized, the seed develops into a plant, continuing the cycle.</p>
+            <img src="https://example.com/plant-pollination.jpg" alt="Plant Pollination" />
+            <p>The fertilized seed contains genetic material from both parent plants, contributing to genetic diversity in the offspring. Examples include flowering plants like roses, sunflowers, and many fruit-bearing trees.</p>
+
+            <h4>Asexual Reproduction in Plants</h4>
+            <p>Asexual reproduction occurs through processes like budding, leaf cutting, and root division. In this form of reproduction, new plants grow from a part of the parent plant without the need for fertilization.</p>
+            <img src="https://example.com/leaf-cutting.jpg" alt="Leaf Cutting Propagation" />
+            <p>This method allows plants to quickly produce genetically identical offspring. For example, many plants like spider plants and ivy reproduce through runners or cuttings, enabling rapid expansion of the plant population.</p>
+        </div>
+    </div>
+
+    <!-- Topic 7: Techniques for Plant Propagation (e.g., Stem Cuttings, Marcotting, Grafting, Leaf Cutting) -->
+    <div class="topic">
+        <h3>7. Techniques for Plant Propagation (e.g., Stem Cuttings, Marcotting, Grafting, Leaf Cutting)</h3>
+        <p>
+            People have devised various ways or techniques to propagate plants from parts of other plants. This allows for quicker growth and the production of new plants without needing to start from seeds.
+        </p>
+        <button class="learn-more-btn" onclick="toggleLearnMore('plant-propagation')">Learn More</button>
+        <div id="learn-more-plant-propagation" class="learn-more-content">
+            <h4>Stem Cuttings</h4>
+            <p>In stem cutting, a portion of a plant's stem is cut off and planted in soil or water to grow a new plant. This is common with plants like roses, geraniums, and lavender. The cutting will develop roots, and a new plant will emerge.</p>
+            <img src="https://example.com/stem-cuttings.jpg" alt="Stem Cutting Propagation" />
+
+            <h4>Marcotting (Air Layering)</h4>
+            <p>Marcotting involves inducing root growth on a branch while it is still attached to the parent plant. The branch is wounded, covered with moist soil or moss, and wrapped in plastic to keep it humid. Once roots form, the branch is cut off and planted separately.</p>
+            <img src="https://example.com/marcotting.jpg" alt="Marcotting Propagation" />
+
+            <h4>Grafting</h4>
+            <p>Grafting involves joining two plant parts together to form a new plant. One part (the scion) is taken from a desired plant and attached to another part (the rootstock), which is often hardier. This is commonly done in fruit trees like apples and citrus to combine desirable traits such as fruit production and disease resistance.</p>
+            <img src="https://example.com/grafting.jpg" alt="Grafting Technique" />
+
+            <h4>Leaf Cutting</h4>
+            <p>Leaf cutting is when a healthy leaf is cut from a plant and used to grow a new plant. This method is often used with succulents like jade plants or African violets. The leaf, when placed in soil, develops roots and a new plant begins to grow from it.</p>
+            <img src="https://example.com/leaf-cutting-propagation.jpg" alt="Leaf Cutting Propagation" />
+        </div>
+    </div>
+
